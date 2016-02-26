@@ -1,0 +1,47 @@
+#paginacao{
+	width: 100%;
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 12px;
+	color: #bbb;
+}
+.paginacao {
+	margin: 15px 0;
+	clear: both;
+	width:100%;
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.paginacao a {
+	font-size: 12px;
+	cursor: pointer;
+	color: #333;
+}
+
+.paginacao a:hover {
+	background-color: #222;
+	color: #fff;
+}
+
+.paginacao a.jp-previous { margin-right: 15px; }
+.paginacao a.jp-next { margin-left: 15px; }
+
+.paginacao a.jp-current, a.jp-current:hover {
+	color: #FF4242!important;
+	font-weight: bold;
+}
+
+.paginacao a.jp-disabled, a.jp-disabled:hover {
+	color: #bbb;
+}
+
+.paginacao a.jp-current, a.jp-current:hover,
+.paginacao a.jp-disabled, a.jp-disabled:hover {
+	cursor: default;
+	background: none;
+}
+
+.paginacao span { margin: 0 5px; }

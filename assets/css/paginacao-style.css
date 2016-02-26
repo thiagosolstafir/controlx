@@ -1,0 +1,68 @@
+
+
+        .listaPaginacao
+        {
+            margin: 15px 0;
+            text-decoration: none;
+        }
+        .listaPaginacao a
+        {
+            font-size: 15px;
+            cursor: pointer;
+            margin: 0 0;
+            margin-right: 5px;
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            background: #d4d4d4;
+
+        }
+        .listaPaginacao a:hover
+        {
+            background-color: #222;
+            color: #fff;
+            text-decoration: none;
+        }
+        .listaPaginacao a.jp-previous
+        {
+
+        }
+        .listaPaginacao a.jp-next
+        {
+            margin-left: 5px;
+        }
+        .listaPaginacao a.jp-current, a.jp-current:hover
+        {
+            color: #FF4242;
+            font-weight: bold;
+        }
+        .listaPaginacao a.jp-disabled, a.jp-disabled:hover
+        {
+            color: #bbb;
+        }
+        .listaPaginacao a.jp-current, a.jp-current:hover, a.jp-disabled:hover
+        {
+            cursor:pointer;
+            background: blue;
+            text-decoration: none;
+        }
+        .listaPaginacao a.jp-disabled{
+
+        }
+        .listaPaginacao a.jp-disabled:hover{
+            background: #d4d4d4;
+            cursor: default;
+            text-decoration: none;
+        }
+        .listaPaginacao span
+        {
+            position: relative;
+            bottom: -12px;
+            font-size: 15px;
+            cursor: pointer;
+            margin: 0 0;
+            margin-right: 5px;
+            text-decoration: none;
+            color: #333;
+            padding: 3px;
+        }

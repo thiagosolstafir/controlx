@@ -1,0 +1,6 @@
+AddHandler application/x-httpd-php55 .php
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ http://localhost/thiago/admin/index.php?p=$1
