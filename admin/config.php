@@ -1,10 +1,10 @@
 <?php
-$_SESSION['url_upload_home'] = "/thiago/uploads";
-$_SESSION['url_upload_admin'] = "/thiago/admin/uploads";
-$_SESSION['url_site'] = "http://localhost/thiago";
-$_SESSION['url_admin'] = "http://localhost/thiago/admin";
-define("URL_SITE", "http://localhost/thiago");
-define("URL_ADMIN", "http://localhost/thiago/admin");
+define('url_upload_site', '/controlx/uploads');
+define('url_upload_admin', '/controlx/admin/uploads');
+$_SESSION['url_site'] = "http://localhost/controlx";
+$_SESSION['url_admin'] = "http://localhost/controlx/admin";
+define("URL_SITE", "http://localhost/controlx");
+define("URL_ADMIN", "http://localhost/controlx/admin");
 include('xcrud/xcrud.php');
 require_once "functions.php";
 require_once "medoo.php";
