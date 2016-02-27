@@ -10,6 +10,8 @@ if (!$login->isUserLoggedIn() == true) {
 
 
 ?>
+<script src="http://cdn.zingchart.com/zingchart.min.js"></script>
+
 
 <div id="wrapper">
   <?php include "template-site/topo.php"; ?>

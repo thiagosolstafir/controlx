@@ -15,11 +15,9 @@
       </li>
 
       <?php
-      if(isset($pageAction)){
-        $pageAction = segmento_url($_GET['p'], 1);
-      }else{
-        $pageAction = '';
-      }
+
+        @$pageAction = segmento_url($_GET['p'], 1);
+
       ?>
 
       <li>

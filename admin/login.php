@@ -50,9 +50,9 @@ if(isset($_GET['logar'])){
   <style> .btn-entrar{width: 100%;}.esqueceu{margin-top: 15px;}.nome-site{ color: #000; text-align: center; width: 100%; font-size: 24px; letter-spacing: 1px; font-weight: 900; text-transform: uppercase;} </style>
 
 </head>
-<body style="background-color: #E2E2E2;">
+<body>
   <div class="container">
-    <div class="row text-center " style="padding-top:100px;">
+    <div class="row text-center " style="margin-top:100px;margin-bottom:30px;">
       <div class="col-md-12">
         <?php
         $dados = $db->select("th_configuracoes", "*");
@@ -69,28 +69,27 @@ if(isset($_GET['logar'])){
           </div>
         </div>
 
-        <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+        <div class="col-md-4 col-md-offset-4">
+                <div class="login-panel panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Por favor, faça o login</h3>
+                  </div>
+                  <div class="panel-body">
+                    <form action="login_admin/index.php" method="post" name="loginform"  id="loginform">
+                      <fieldset>
+                        <div class="form-group">
+                          <input id="login_input_username" class="login_input form-control" type="text" name="usuario" required autofocus placeholder="Usuário" />
+                        </div>
+                        <div class="form-group">
+                              <input id="login_input_password" class="login_input form-control" type="password" name="senha" autocomplete="off" required placeholder="Senha" />
+                        </div>
+                        <button type="submit" name="login" class="btn btn-lg btn-success btn-block">Entrar</button>
 
-          <div class="panel-body">
-            <form action="login_admin/index.php" method="post" name="loginform">
-              <hr />
-              <div class="form-group input-group">
-                <span class="input-group-addon"><i class="fa fa-user"  ></i></span>
-                <input id="login_input_username" class="login_input form-control" type="text" name="usuario" required="" autofocus="" placeholder="Usuário">
+                      </fieldset>
+                    </form>
+                  </div>
+                </div>
               </div>
-              <div class="form-group input-group">
-                <span class="input-group-addon"><i class="fa fa-lock"  ></i></span>
-                <input id="login_input_password" class="login_input form-control" type="password" name="senha" autocomplete="off" required="" placeholder="Senha">
-              </div>
-              <button type="submit" name="login" class="btn btn-lg btn-success btn-block">Entrar</button>
-
-              <span class="pull-right esqueceu">
-                <a href="<?php echo URL_ADMIN ?>/login.php?sair" >Esqueceu a senha?</a>
-              </span>
-            </form>
-          </div>
-
-        </div>
 
 
 
