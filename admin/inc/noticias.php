@@ -22,7 +22,7 @@ $xcrud->unset_csv();
 $xcrud->table('noticias');
 $xcrud->button($_SESSION['url_site'].'/noticias/{id_noticia}','','','',array('target'=>'_blank'));
 $xcrud->fields('id_categoria,id_administrador,titulo,texto,foto_principal');
-$xcrud->columns('id_categoria,id_administrador,titulo,texto');
+$xcrud->columns('id_categoria,id_administrador,titulo');
 $xcrud->label('id_administrador', 'Administrador');
 $xcrud->label('id_categoria', 'Categoria');
 $xcrud->column_cut(30,'title,description'); // separate columns
