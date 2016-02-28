@@ -19,14 +19,14 @@ $xcrud->columns('nome,id_categoria,url');
 $xcrud->button($_SESSION['url_site'].'/uploads/sites/{url}/home','','','',array('target'=>'_blank'));
 $xcrud->unset_title();
 $xcrud->change_type('ativo','select','', array('0'=>'Não','1'=>'Sim'));
-$xcrud->create_action('publish', 'publish_action');
-$xcrud->create_action('unpublish', 'unpublish_action');
+$xcrud->create_action('publish', 'publish_action_portfolio');
+$xcrud->create_action('unpublish', 'unpublish_action_portfolio');
 
 $xcrud->button('#', 'unpublished', 'icon-close glyphicon glyphicon-remove', 'xcrud-action',
 array(
   'data-task' => 'action',
   'data-action' => 'publish',
-  'data-primary' => '{id}'),
+  'data-primary' => '{id_portfolio}'),
   array(
     'ativo',
     '!=',
@@ -35,7 +35,7 @@ array(
   $xcrud->button('#', 'published', 'icon-checkmark glyphicon glyphicon-ok', 'xcrud-action', array(
     'data-task' => 'action',
     'data-action' => 'unpublish',
-    'data-primary' => '{id}'), array(
+    'data-primary' => '{id_portfolio}'), array(
       'ativo',
       '=',
       '1'));

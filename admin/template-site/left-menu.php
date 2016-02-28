@@ -3,7 +3,7 @@
     <ul class="nav" id="main-menu">
       <li>
         <div class="user-img-div">
-          <a href="<?php echo URL_ADMIN;?>/administradores/<?php echo time(); ?>"><img src="<?php echo URL_SITE; ?>/uploads/sem-foto.png" class="img-thumbnail" /></a>
+          <a href="<?php echo URL_ADMIN;?>/administradores/<?php echo hash('md5', rand(), false); ?>"><img src="<?php echo URL_SITE; ?>/uploads/sem-foto.png" class="img-thumbnail" /></a>
 
           <div class="inner-text">
             <?php echo $_SESSION['nome_administrador']; ?>

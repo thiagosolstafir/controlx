@@ -25,21 +25,21 @@ function save_action($xcrud)
 	echo '<script>alert("legal");</script>';
 }
 
-function publish_action($xcrud)
+function publish_action_portfolio($xcrud)
 {
     if ($xcrud->get('primary'))
     {
         $db = Xcrud_db::get_instance();
-        $query = 'UPDATE portfolios SET `ativo` = b\'1\' WHERE id = ' . (int)$xcrud->get('primary');
+        $query = 'UPDATE portfolios SET `ativo` = b\'1\' WHERE id_portfolio = ' . (int)$xcrud->get('primary');
         $db->query($query);
     }
 }
-function unpublish_action($xcrud)
+function unpublish_action_portfolio($xcrud)
 {
     if ($xcrud->get('primary'))
     {
         $db = Xcrud_db::get_instance();
-        $query = 'UPDATE portfolios SET `ativo` = b\'0\' WHERE id = ' . (int)$xcrud->get('primary');
+        $query = 'UPDATE portfolios SET `ativo` = b\'0\' WHERE id_portfolio = ' . (int)$xcrud->get('primary');
         $db->query($query);
     }
 }
