@@ -12,7 +12,7 @@ class medoo
 	// General
 	protected $database_type = "mysql";
 	protected $charset = "utf8";
-	protected $database_name = "thiago";
+	protected $database_name = "controlx";
 	// For MySQL, MariaDB, MSSQL, Sybase, PostgreSQL, Oracle
 	protected $server = "localhost";
 	protected $username = "root";
